@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--¡Hello! :)-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio - Mauricio Chaila</title>
+
+	<meta name="description" content="Portfolio de Mauricio Chaila, desarrollador web.">
+    <meta name="keywords" content="portfolio, desarrollador web - mobile, Mauricio Chaila">
+    <meta name="author" content="Mauricio Chaila">
+
+	<meta property="og:title" content="Portfolio de Mauricio Chaila - Desarrollador web">
+    <meta property="og:description" content="Desarrollo sitios y aplicaciones web modernos y optimizados. Explora mis proyectos y tecnologías.">
+
+	<meta property="og:image" content="https://images.pexels.com/photos/276452/pexels-photo-276452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <meta property="og:url" content="https://mother-s-milk.github.io/Portfolio-FrancoD.Vera/">
+    <meta property="og:type" content="website">
+
+	<!-- Favicon estándar -->
+  	<link rel="icon" href="img/icono.png" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script defer type="text/javascript" src="script.js"></script>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!--Favicon-->
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+	<div class="space-background"></div>
+
+	<header>
+		<div class="container section nav-container">
+			<div class="logo">
+				Champ
+			</div>
+			<nav class="nav-desplegable">
+				<ul class="nav-links">
+					<li><a href="javascript:void(0)">Inicio</a></li>
+					<li><a href="#sobreMi">Sobre mi</a></li>
+					<li><a href="#proyectos">Proyectos</a></li>
+					<li><a href="#formacion">Formación</a></li>
+				</ul>
+			</nav>
+			<button type="button" class="display-none btn-mostrar-menu"><i class="fa-solid fa-bars"></i></button>
+		</div>
+	</header>
+
+	<main>
+		<section class="container section encabezado">
+			<div class="img-container">
+				<img src="img/me.png" alt="Foto de perfil">
+			</div>
+			<div class="info-header">
+				<h1>Mauricio Chaila</h1>
+				<p class="text">Desarrollador web full-stack. - Desarrollador Mobile</p>
+				<p class="text">
+					<i class="fa-solid fa-location-dot" style="margin-right: 6px; color: red"></i>
+					San Miguel de Tucumán, Tucumán, Argentina
+				</p>
+				<div class="links link-2">
+					<a href="javascript:void(0)" id="copy-email" onclick="copyEmail(event)">
+						<i class="fa-solid fa-envelope" style="margin-right: 3px"></i>mauchamps33@gmail.com
+					</a>
+					<a href="Curriculum.pdf" download="CV-MauricioChaila-ES">
+						<i class="fa-solid fa-file"></i>
+					</a>
+					<a href="https://github.com/myjchamp" target="_blank">
+						<i class="fa-brands fa-github-alt"></i>
+					</a>
+					<a href="https://www.linkedin.com/in/mauricio-chaila-7818b2246/" target="_blank">
+						<i class="fa-brands fa-linkedin-in"></i>
+					</a>
+				</div>
+				<div class="skills-container">
+					<div class="skills-1">
+						<span><i class="fa-brands fa-html5"></i>HTML</span>
+						<span><i class="fa-brands fa-css3-alt"></i>CSS</span>
+						<span><i class="fa-brands fa-js"></i>JavaScript</span>
+						<span><i class="fa-solid fa-database"></i>MySQL</span>
+						<span><i class="fa-brands fa-git-alt"></i>GIT</span>
+					</div>
+					<div class="skills-2">
+						<span><i class="fa-brands fa-swift"></i>Swift</span>
+						<span><i class="fa-brands fa-apple"></i>iOS</span>
+						<span><i class="fa-brands fa-java"></i>Java</span>
+						<span><i class="fa-brands fa-android"></i>Android / Kotlin - Jetpack Compose</span>
+					</div>
+				</div>
+			</div>
+			<img src="img/logo champ.png" alt="Logo Champ" class="logo-image">
+		</section>
+		
+		<div class="divisor-container">
+			<hr class="divisor">
+		</div>
+		<section class="container section" id="sobreMi">
+			<h1 class="titulo-seccion">Sobre mí</h1>
+			<p class="text">
+				Programador Full Stack y Desarrollador Mobile con amplia experiencia en la creación de aplicaciones web, móviles y páginas web interactivas.  
+				Mi stack tecnológico abarca <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Java</strong> y <strong>MySQL</strong>, permitiéndome desarrollar aplicaciones web completas.  
+				En el ámbito móvil, domino <strong>Kotlin</strong> con <strong>Jetpack Compose</strong> y <strong>SwiftUI</strong>, creando aplicaciones nativas para <strong>Android</strong> e <strong>iOS</strong>.  
+				Cuento con habilidades sólidas en diseño orientado a objetos y en la implementación de arquitecturas como <strong>MVC</strong> y <strong>DAO/DTO</strong>, lo que asegura un código limpio, modular y escalable.  
+				Entre mis logros destacados, he lanzado aplicaciones que acumulan más de <strong>500,000 descargas</strong>, demostrando mi capacidad para desarrollar productos exitosos y funcionales.
+			  </p>
+			  
+		</section>
+		<div class="divisor-container">
+			<hr class="divisor">
+		</div>
+		<div class="divisor-container">
+			<hr class="divisor">
+		</div>
+		<section class="container section" id="proyectos">
+			<h1 class="titulo-seccion">Proyectos</h1>
+			<main class="proyectos">
+				<div class="project-card">
+					<div class="card-header">
+					  <img src="img/portada_xviolet.png" alt="Cover Image" class="cover-image">
+					</div>
+					<div class="card-content">
+					  <h3>Ratio Memes</h3>
+					  <p>
+						Disponible para <strong>Android</strong> e <strong>iOS</strong> en <strong>Google Play</strong> y <strong>App Store</strong>, también cuenta con una <strong>página web introductoria</strong>. Diseñada para <strong>ver</strong>, <strong>buscar</strong> y <strong>disfrutar</strong> de tus <strong>memes favoritos</strong> sin ocupar espacio en tu dispositivo, utiliza la <strong>nube de Firebase</strong> para almacenar los archivos de manera eficiente. La app fue desarrollada en <strong>Kotlin</strong> con <strong>Jetpack Compose</strong> para Android y en <strong>SwiftUI</strong> para iOS. Con funciones que permiten <strong>compartir memes</strong> como <strong>audio</strong>, <strong>imagen</strong> o <strong>video</strong>, integrarse fácilmente con <strong>Twitter</strong>, y agregar memes a tus <strong>favoritos</strong>, Ratio Memes sigue recibiendo actualizaciones para mejorar la experiencia.
+					  </p>
+					  <div class="download-buttons">
+						<a href="https://play.google.com/store/apps/details?id=com.champ.ratiomemes" target="_blank" class="store-button google-play">
+						  <img src="img/playstore.png" alt="Get on Google Play">
+						</a>
+						<a href="https://apps.apple.com/app/ratio-memes/id6504302774" target="_blank" class="store-button app-store">
+						  <img src="img/app_store.png" alt="Download on the App Store">
+						</a>
+					  </div>
+					  <!-- Nuevo botón de página web -->
+					  <div class="webpage-button">
+						<a href="https://myjchamp.github.io/RatioMemes/" target="_blank">
+						  <span><i class="fa-solid fa-globe"></i> Ir a la página web</span>
+						</a>
+					  </div>
+					</div>
+				</div>
+				<div class="project-card">
+					<div class="card-header">
+					  <img src="img/portada_cnc.png" alt="Cover Image" class="cover-image">
+					</div>
+					<div class="card-content">
+					  <h3>CNC Laser</h3>
+					  <p>
+						Disponible para <strong>Android</strong> e <strong>iOS</strong>, diseñada para <strong>optimizar</strong> el trabajo con maquinaria <strong>CNC</strong>. Con esta herramienta, los usuarios pueden <strong>calcular costos</strong>, <strong>estimar tiempos de trabajo</strong>, obtener <strong>vectores</strong> y <strong>diseños personalizados</strong>, y generar <strong>comprobantes</strong>. La app está desarrollada en <strong>lenguajes nativos</strong> para garantizar el mejor rendimiento: <strong>Kotlin</strong> con <strong>Jetpack Compose</strong> para Android y <strong>SwiftUI</strong> para iOS. Además, integra <strong>bases de datos locales</strong> para mayor eficiencia y <strong>Firebase</strong> para sincronización online. CNC Laser ya cuenta con más de <strong>20.000 descargas</strong> en la <strong>Play Store</strong> y <strong>App Store</strong>.
+					</p>
+					  <div class="download-buttons">
+						<a href="https://play.google.com/store/apps/details?id=com.myj.cncrouterlaser&hl=es_AR" target="_blank" class="store-button google-play">
+						  <img src="img/playstore.png" alt="Get on Google Play">
+						</a>
+						<a href="https://apps.apple.com/app/cnc-laser/id6717614133" target="_blank" class="store-button app-store">
+						  <img src="img/app_store.png" alt="Download on the App Store">
+						</a>
+					  </div>
+					</div>
+				</div>
+			</main>
+		</section>
+		<div class="divisor-container">
+			<hr class="divisor">
+		</div>
+		<section class="container section" id="formacion">
+			<h1 class="titulo-seccion">Formación</h1>
+			<div class="-tarjeta">
+				<div>
+					<h1>Programación Java Básico - Intermedio</h1>
+					<p class="text">UTN - CISCO (2017-2020)</p>
+					<p class="text">
+						Formación completa en Java, comenzando con los fundamentos del lenguaje, incluyendo sintaxis, estructuras de control, y conceptos básicos de la programación orientada a objetos. Posteriormente, se abordaron temas intermedios como estructuras de datos, manejo de excepciones, programación modular y conectividad con bases de datos, desarrollando aplicaciones robustas y eficientes.
+					</p>
+				</div>
+			</div>
+			<div class="-tarjeta">
+				<div>
+					<h1>Programación Universitaria</h1>
+					<p class="text">UTN (2022-2025)</p>
+					<p class="text">
+						Formación integral en desarrollo de software, abarcando múltiples lenguajes y tecnologías. Incluyó programación orientada a objetos y creación de aplicaciones de escritorio en C#, desarrollo de aplicaciones web utilizando HTML, CSS y JavaScript. Se profundizó en lógica y estadística aplicada, manejo avanzado de hardware informático y la integración de inteligencia artificial adaptada a la programación. Además, se adquirieron competencias en inglés avanzado, esenciales para la documentación técnica y la comunicación profesional en entornos internacionales.
+					</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+	<div class="divisor-container">
+		<hr class="divisor">
+	</div>
+	
+</body>
+</html>
