@@ -368,3 +368,468 @@ img {
 .-tarjeta h1, .-tarjeta p {
     margin: 0.2rem 0; /* Espaciado entre los elementos */
 }
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 0.5625rem;/*9px*/ /*Ancho de la barra de desplazamiento*/
+}
+::-webkit-scrollbar-track {
+    background-color: #0B1E30; /*Color de fondo del track*/
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1e2021; /*Color del thumb*/
+    border-radius: 0.5625rem; /*Bordes redondeados*/
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #5d7098; /*Cambia de color al pasar el mouse*/
+}
+::-webkit-scrollbar-button {
+    display: none; /*Esto oculta las flechas de arriba y abajo*/
+}
+body {
+	font-family: 'Quicksand', sans-serif;
+	overflow-x: hidden;
+	background-color: #0f102f;
+	color: #fff;
+	text-shadow: 0px 1px 0.02rem rgb(143, 159, 182);
+}
+.space-background {
+    position: fixed; /*Ocupa todo el fondo*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /*Debajo del contenido*/
+    pointer-events: none; /*Permite interactuar con el contenido encima*/
+}
+/*Estilos Generales*/
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    border: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+img {
+	display: block;
+}
+/*Estilos para las secciones*/
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.section {
+    padding: 1.875rem 9.375rem; /*30px 150px*/
+}
+/*Nav*/
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+/*Parte de logo y links*/
+.display-none {
+	display: none;
+}
+.logo {
+	font-weight: 700;
+	font-size: 1.875rem;
+}
+.nav-links li {
+	margin-right: 0.9375rem; /*15px*/
+}
+.nav-links a {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 0.9375rem;
+}
+
+.nav-links,
+.social-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+}
+.nav-links a:last-child {
+	margin-right: 0;
+}
+.nav-links a,
+.social-links a {
+	text-decoration: none;
+	font-weight: 500;
+	display: block;
+	padding: 0.1875rem 0.375rem; /*3px 6px*/
+	transition: color 0.3s ease;
+	color: #fff;
+}
+.social-links > li > a {
+	font-size: 27px;
+}
+.nav-links > li > a:hover {
+	color: #E67E22;
+}
+.social-links > li > a:hover {
+	color: #1c5094;
+}
+/*Hero section*/
+.text {
+	font-size: 18px;
+	font-weight: 400;
+	text-align: justify;
+}
+.encabezado {
+	display: flex;
+	justify-content: space-between; /* Separa los elementos extremos */
+	align-items: center; /* Centra verticalmente los elementos */
+	gap: 1.875rem;
+	flex-wrap: nowrap; /* Impide que los elementos se reordenen */
+}
+
+.img-container img {
+    max-width: 200px; /* Ajusta el tamaño de la foto de perfil */
+    height: auto;
+}
+
+.info-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-grow: 1; /* Permite que esta sección ocupe espacio flexible */
+}
+
+.logo-image {
+	max-height: 166px; /* Asegura que el logo sea más pequeño */
+	width: auto; /* Mantiene la proporción del logo */
+	margin-left: 4px; /* Separa el logo de los elementos principales */
+}
+
+
+.logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10%; /* Toma el alto del contenedor */
+}
+
+.encabezado > div:nth-child(2) {
+	width: auto;
+}
+.info-header h1 {
+	font-size: 45px;
+	font-weight: 600;
+	margin-bottom: 9px;
+}
+.info-header p {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 9px;
+}
+/*Links*/
+.links {
+	display: flex;
+	gap: 0.375rem;
+	flex-wrap: wrap;
+}
+.links a {
+	font-size: 18px;
+	display: inline-block;
+	padding: 9px 12px;
+	color: #fff;
+	border-radius: 9px;
+	text-align: center;
+	align-content: center;
+	transition: background-color 0.3s ease, border 0.3s ease;
+}
+.link-2 a {
+	background-color: #007BFF;
+	border: 1px solid #081d2b;
+}
+.link-2 a:hover {
+	background-color: #007BFF;
+	border: 1px solid #081d2b;
+}
+.link-3 a {
+	background-color: rgba(30, 58, 86, 1);
+	border: 1px solid #284E74;
+}
+.link-3 a:hover {
+	background-color: #284E74;
+	border: 1px solid rgba(30, 58, 86, 1);
+}
+.img-container > img {
+	width: 200px;
+	height: 284px;
+	object-fit: contain;
+	object-position: center;
+	border-radius: 0.9375rem;
+}
+.divisor-container {
+	max-width: 1440px;
+    margin: 0 auto;
+	padding: 0 9.375rem;
+}
+.divisor {
+    border: none;
+    border-radius: 0.9375rem;
+    height: 2px;
+    background-color: rgba(42, 77, 101, 0.5);
+    width: 100%;
+}
+
+.titulo-seccion {
+	font-size: 1.875rem;
+	font-weight: 700;
+	margin-bottom: 0.9375rem;
+	text-transform: uppercase;
+}
+/*** Ajustes para las habilidades ***/
+.skills-1,
+.skills-2 {
+    display: flex;
+    gap: 0.375rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem; /* Margen vertical entre skills-1 y skills-2 */
+    justify-content: flex-start; /* Alineación horizontal de los elementos dentro */
+    width: 100%; /* Asegúrate de que ocupen todo el ancho del contenedor */
+}
+.skills-container {
+    display: flex;
+    flex-direction: column; /* Coloca skills-1 y skills-2 en vertical */
+    align-items: flex-start; /* Alinea el contenedor de habilidades a la izquierda */
+    margin-top: 1.5rem; /* Espacio superior para separarlo del resto del contenido */
+    width: 100%; /* Asegúrate de que ocupe todo el ancho disponible */
+}
+/* Ajustes de span (se mantienen igual) */
+.skills-1 > span,
+.skills-2 > span {
+    padding: 0.1875rem 0.375rem;
+    border: 1px solid #666;
+    font-size: 0.9375rem;
+    background-color: rgba(51, 51, 51, 0.6);
+    display: flex;
+    align-items: center;
+    border-radius: 0.375rem;
+}
+.skills-1 > span > i,
+.skills-2 > span > i {
+    margin-right: 0.1875rem;
+    font-size: 0.9375rem;
+}
+.cover-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Ajusta la imagen sin deformarla */
+  }
+.proyectos {
+    display: flex; /* Activa Flexbox para alinear los hijos */
+    justify-content: space-between; /* Espacio entre las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten si no hay espacio */
+    gap: 20px; /* Espaciado entre las tarjetas */
+}
+.project-card {
+	width: 500px; /* Tamaño de la tarjeta */
+	border-radius: 0.5rem; /* Bordes redondeados */
+	overflow: hidden; /* Ocultar contenido que se salga del borde */
+	box-shadow: 0 1px 1px rgba(253, 252, 252, 0.988); /* Sombra para dar efecto */
+	font-family: Arial, sans-serif; /* Tipografía general */
+	background-color: white; /* Fondo blanco */
+  }
+.card-header {
+    position: relative;
+	width: 100%;
+	height: 200px; /* Altura de la imagen de portada */
+ }
+ .card-content {
+	padding: 1rem; /* Espaciado interno del contenido */
+	text-align: left;
+	color: rgb(13, 15, 68); /* Color del texto */
+  }
+  .card-content h3 {
+	margin-top: 0; /* Elimina el espacio superior del título */
+  margin-bottom: 0.5rem; /* Espacio reducido debajo del título */
+	font-size: 1.50rem;
+  }
+  .card-content p {
+	margin: 0 0 0 0.5rem; /* Margen izquierdo del párrafo */
+	font-size: 0.875rem;
+  }
+  .card-content p {
+	margin: 0;
+	font-size: 1.2rem; /* Tamaño del texto */
+	color: rgb(17, 9, 66); /* Cambia a color negro */
+  }
+  .download-buttons {
+	display: flex;
+	gap: 1rem; /* Espaciado entre los botones */
+	margin-top: 1rem; /* Margen superior */
+  }
+  .store-button img {
+	width: 224px; /* Ajusta el tamaño del botón */
+	height: auto;
+	transition: transform 0.2s ease-in-out;
+  }
+  .store-button img:hover {
+	transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+  }
+  .store-button {
+	text-decoration: none; /* Quitar subrayado de enlaces */
+  }
+  .webpage-button {
+	margin-top: 1rem; /* Separación del resto del contenido */
+	text-align: center; /* Centrar el botón */
+  }
+  /* Estilos del enlace */
+  .webpage-button a {
+	display: inline-flex; /* Alinear texto e ícono horizontalmente */
+	align-items: center;
+	background-color: #007BFF; /* Color del botón */
+	color: white; /* Color del texto */
+	text-decoration: none; /* Sin subrayado */
+	font-size: 1rem; /* Tamaño del texto */
+	font-weight: bold; /* Negrita */
+	padding: 0.5rem 1rem; /* Espaciado interno */
+	border-radius: 0.5rem; /* Bordes redondeados */
+	transition: background-color 0.3s ease-in-out;
+  }
+  /* Espaciado entre el ícono y el texto */
+  .webpage-button a span {
+	display: inline-flex;
+	gap: 0.5rem;
+  }
+  /* Estilos para el ícono */
+  .webpage-button a i {
+	font-size: 1.2rem; /* Tamaño del ícono */
+  }
+  /* Efecto hover en el botón */
+  .webpage-button a:hover {
+	background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+  }
+/* Estilos para la tarjeta */
+.-tarjeta {
+    background-color: #354d67; /* Fondo azul */
+    border-radius: 1rem; /* Bordes redondeados */
+    padding: 1.5rem; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    display: flex;
+    flex-direction: column; /* Cambiar la dirección de los elementos para que estén en columna */
+    justify-content: flex-start; /* Alinea los elementos desde el inicio */
+    align-items: flex-start; /* Alinea los elementos hacia la izquierda */
+    margin-bottom: 1.5rem; /* Espaciado entre tarjetas */
+    color: #fff; /* Color del texto */
+}
+/* Asegura que el contenido dentro de la tarjeta tenga márgenes adecuados */
+.-tarjeta div {
+    width: 100%; /* Los elementos dentro de la tarjeta ocupan el 100% del ancho */
+    margin-bottom: 1rem; /* Añade espaciado entre los elementos */
+}
+/* Ajusta el espaciado entre el título, texto y fecha */
+.-tarjeta h1, .-tarjeta p {
+    margin: 0.2rem 0; /* Espaciado entre los elementos */
+}
+/* Ajustes de diseño para móviles */
+@media (max-width: 768px) {
+	/* Contenedor principal */
+	.container {
+	  padding: 10px;
+	}
+  
+	/* NavBar */
+	.nav-container {
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	}
+  
+	.logo {
+	  font-size: 1.5rem;
+	  margin-bottom: 10px;
+	}
+  
+	.nav-links {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 10px;
+	  margin: 0;
+	  padding: 0;
+	}
+  
+	.nav-links li a {
+	  font-size: 1rem;
+	}
+  
+	/* Botón del menú en dispositivos pequeños */
+	.btn-mostrar-menu {
+	  display: block;
+	  margin-top: 10px;
+	}
+  
+	.nav-desplegable {
+	  display: none; /* Oculta el menú desplegable por defecto */
+	}
+  
+	.btn-mostrar-menu.active + .nav-desplegable {
+	  display: flex;
+	  flex-direction: column;
+	}
+  
+	/* Sección de encabezado */
+	.encabezado {
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	}
+  
+	.img-container {
+	  margin-bottom: 15px;
+	}
+  
+	.info-header h1 {
+	  font-size: 1.8rem;
+	}
+  
+	.info-header p {
+	  font-size: 1rem;
+	}
+  
+	.skills-container {
+	  flex-direction: column;
+	  gap: 10px;
+	}
+  
+	.skills-container span {
+	  font-size: 0.9rem;
+	}
+  
+	/* Tarjetas de proyecto */
+	.proyectos {
+	  display: flex;
+	  flex-direction: column;
+	  gap: 20px;
+	}
+  
+	.project-card {
+	  width: 100%;
+	}
+  
+	.project-card img.cover-image {
+	  width: 100%;
+	  height: auto;
+	}
+  
+	.download-buttons img {
+	  width: 120px;
+	  height: auto;
+	}
+  }
