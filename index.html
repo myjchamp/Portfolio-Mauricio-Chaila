@@ -2,16 +2,18 @@
 <html lang="en">
 <head>
 	<script>
-		document.addEventListener("DOMContentLoaded", () => {
-			// Obtener el idioma preferido del navegador
-			const userLanguage = navigator.language || navigator.userLanguage;
-	
-			// Comprobar si el idioma es español
-			if (userLanguage.startsWith("es")) {
-                            window.location.href = "es/index.html"; // Ruta relativa
-                        }
-		});
-	</script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Obtener el idioma preferido del navegador
+        const userLanguage = navigator.language || navigator.userLanguage;
+
+        // Comprobar si el idioma es español
+        if (userLanguage.startsWith("es")) {
+            // Redirigir al archivo index.html dentro de la carpeta "es/"
+            window.location.href = "es/index.html"; // Ruta relativa
+        }
+    });
+</script>
+
 	<!--¡Hello! :)-->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
