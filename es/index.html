@@ -1,205 +1,390 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<!--¡Hello! :)-->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Portfolio - Mauricio Chaila</title>
-
-	<meta name="description" content="Portfolio de Mauricio Chaila, desarrollador web.">
-    <meta name="keywords" content="portfolio, desarrollador web - mobile, Mauricio Chaila">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mauricio Chaila | Desarrollador Mobile</title>
+    
+    <meta name="description" content="Desarrollador Mobile Senior especializado en Kotlin Multiplatform, Android e iOS. +7 años de experiencia, +30K usuarios.">
+    <meta name="keywords" content="desarrollador mobile, kotlin, android, ios, jetpack compose, swiftui, kotlin multiplatform">
     <meta name="author" content="Mauricio Chaila">
-
-	<meta property="og:title" content="Portfolio de Mauricio Chaila - Desarrollador web - mobile">
-    <meta property="og:description" content="Apps web y mobile modernos y optimizados. Explora mis proyectos y tecnologías.">
-
-	<meta property="og:image" content="https://bitrebels.com/wp-content/uploads/2017/06/kotlin-programming-language-learning-header.jpg">
-    <meta property="og:url" content="https://myjchamp.github.io/Portfolio-Mauricio-Chaila/">
+    
+    <meta property="og:title" content="Mauricio Chaila | Desarrollador Mobile">
+    <meta property="og:description" content="Desarrollador Mobile Senior especializado en Kotlin Multiplatform, Android e iOS.">
     <meta property="og:type" content="website">
-
-	<!-- Favicon estándar -->
-  	<link rel="icon" href="img/icono.png" type="image/x-icon">
-
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script defer type="text/javascript" src="script.js"></script>
-
-	<!-- Google Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-	<!--Favicon-->
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
-	<div class="space-background"></div>
+    <!-- Cursor follower -->
+    <div class="cursor-glow"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">MC</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact" class="nav-cta">Contacto</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-	<header>
-		<div class="container section nav-container">
-			<div class="logo">
-				Champ
-			</div>
-			<nav class="nav-desplegable">
-				<ul class="nav-links">
-					<li><a href="javascript:void(0)">Inicio</a></li>
-					<li><a href="#sobreMi">Sobre mi</a></li>
-					<li><a href="#proyectos">Proyectos</a></li>
-					<li><a href="#formacion">Formación</a></li>
-				</ul>
-			</nav>
-			<button type="button" class="display-none btn-mostrar-menu"><i class="fa-solid fa-bars"></i></button>
-		</div>
-	</header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Disponible para nuevos proyectos
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Mauricio</span>
+                    <span class="title-line title-outline">Chaila</span>
+                </h1>
+                <p class="hero-subtitle">Desarrollador Mobile Senior</p>
+                <p class="hero-description">
+                    Creando apps de alto rendimiento para <strong>Android</strong> e <strong>iOS</strong> con 
+                    <strong>Kotlin Multiplatform</strong>, <strong>Jetpack Compose</strong> y <strong>SwiftUI</strong>
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="7">0</span>
+                        <span class="stat-label">Años Exp.</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="30">0</span><span class="stat-suffix">K+</span>
+                        <span class="stat-label">Usuarios</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="40">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">+ Rendimiento</span>
+                    </div>
+                </div>
+                
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Ver Proyectos</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contactar</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="img/me2.png" alt="Mauricio Chaila">
+                    <div class="image-border"></div>
+                </div>
+                <div class="floating-card card-1">
+                    <i class="fa-brands fa-android"></i>
+                    <span>Android</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fa-brands fa-apple"></i>
+                    <span>iOS</span>
+                </div>
+                <div class="floating-card card-3">
+                    <span class="kmp-icon">KMP</span>
+                    <span>Multiplatform</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
 
-	<main>
-		<section class="container section encabezado">
-			<div class="img-container">
-				<img src="img/me2.png" alt="Foto de perfil">
-			</div>
-			<div class="info-header">
-				<h1>Mauricio Chaila</h1>
-				<p class="text">Desarrollador web full-stack. - Desarrollador Mobile</p>
-				<p class="text">
-					<i class="fa-solid fa-location-dot" style="margin-right: 6px; color: red"></i>
-					San Miguel de Tucumán, Tucumán, Argentina
-				</p>
-				<div class="links link-2">
-					<a href="javascript:void(0)" id="copy-email" onclick="copyEmail(event)">
-						<i class="fa-solid fa-envelope" style="margin-right: 3px"></i>mauchamps33@gmail.com
-					</a>
-					<a href="Mauricio_Chaila_CV_ES.pdf" download="CV-MauricioChaila-ES">
-						<i class="fa-solid fa-file"></i>
-					</a>
-					<a href="https://github.com/myjchamp" target="_blank">
-						<i class="fa-brands fa-github-alt"></i>
-					</a>
-					<a href="https://www.linkedin.com/in/mauricio-chaila-7818b2246/" target="_blank">
-						<i class="fa-brands fa-linkedin-in"></i>
-					</a>
-				</div>
-				<div class="skills-container">
-					<div class="skills-1">
-						<span><i class="fa-brands fa-html5"></i>HTML</span>
-						<span><i class="fa-brands fa-css3-alt"></i>CSS</span>
-						<span><i class="fa-brands fa-js"></i>JavaScript</span>
-						<span><i class="fa-solid fa-database"></i>MySQL</span>
-						<span><i class="fa-brands fa-git-alt"></i>GIT</span>
-					</div>
-					<div class="skills-2">
-						<span><i class="fa-brands fa-swift"></i>Swift</span>
-						<span><i class="fa-brands fa-apple"></i>iOS</span>
-						<span><i class="fa-brands fa-java"></i>Java</span>
-						<span><i class="fa-brands fa-android"></i>Android / Kotlin - Jetpack Compose</span>
-					</div>
-				</div>
-			</div>
-			<img src="img/logo champ.png" alt="Logo Champ" class="logo-image">
-		</section>
-		
-		<div class="divisor-container">
-			<hr class="divisor">
-		</div>
-		<section class="container section" id="sobreMi">
-			<h1 class="titulo-seccion">Sobre mí</h1>
-			<p class="text">
-				Programador Full Stack y Desarrollador Mobile con amplia experiencia en la creación de aplicaciones web, móviles y páginas web interactivas.  
-				Mi stack tecnológico abarca <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Java</strong> y <strong>MySQL</strong>, permitiéndome desarrollar aplicaciones web completas.  
-				En el ámbito móvil, domino <strong>Kotlin</strong> con <strong>Jetpack Compose</strong> y <strong>SwiftUI</strong>, creando aplicaciones nativas para <strong>Android</strong> e <strong>iOS</strong>.  
-				Cuento con habilidades sólidas en diseño orientado a objetos y en la implementación de arquitecturas como <strong>MVC</strong> y <strong>DAO/DTO</strong>, lo que asegura un código limpio, modular y escalable.  
-				Poseo un dominio avanzado del <strong>inglés</strong>, lo que me permite colaborar con equipos internacionales y comprender documentación técnica con facilidad.  
-				Entre mis logros destacados, he lanzado aplicaciones que acumulan más de <strong>500,000 descargas</strong>, demostrando mi capacidad para desarrollar productos exitosos y funcionales.
-			</p>
-			  
-		</section>
-		<div class="divisor-container">
-			<hr class="divisor">
-		</div>
-		<div class="divisor-container">
-			<hr class="divisor">
-		</div>
-		<section class="container section" id="proyectos">
-			<h1 class="titulo-seccion">Proyectos</h1>
-			<main class="proyectos">
-				<div class="project-card">
-					<div class="card-header">
-					  <img src="img/portada_xviolet.png" alt="Cover Image" class="cover-image">
-					</div>
-					<div class="card-content">
-					  <h3>Ratio Memes</h3>
-					  <p>
-						Disponible para <strong>Android</strong> e <strong>iOS</strong> en <strong>Google Play</strong> y <strong>App Store</strong>, también cuenta con una <strong>página web introductoria</strong>. Diseñada para <strong>ver</strong>, <strong>buscar</strong> y <strong>disfrutar</strong> de tus <strong>memes favoritos</strong> sin ocupar espacio en tu dispositivo, utiliza la <strong>nube de Firebase</strong> para almacenar los archivos de manera eficiente. La app fue desarrollada en <strong>Kotlin</strong> con <strong>Jetpack Compose</strong> para Android y en <strong>SwiftUI</strong> para iOS. Con funciones que permiten <strong>compartir memes</strong> como <strong>audio</strong>, <strong>imagen</strong> o <strong>video</strong>, integrarse fácilmente con <strong>Twitter</strong>, y agregar memes a tus <strong>favoritos</strong>, Ratio Memes sigue recibiendo actualizaciones para mejorar la experiencia.
-					  </p>
-					  <div class="download-buttons">
-						<a href="https://play.google.com/store/apps/details?id=com.champ.ratiomemes" target="_blank" class="store-button google-play">
-						  <img src="img/playstore.png" alt="Get on Google Play">
-						</a>
-						<a href="https://apps.apple.com/app/ratio-memes/id6504302774" target="_blank" class="store-button app-store">
-						  <img src="img/app_store.png" alt="Download on the App Store">
-						</a>
-					  </div>
-					  <!-- Nuevo botón de página web -->
-					  <div class="webpage-button">
-						<a href="https://myjchamp.github.io/RatioMemes/" target="_blank">
-						  <span><i class="fa-solid fa-globe"></i> Ir a la página web</span>
-						</a>
-					  </div>
-					</div>
-				</div>
-				<div class="project-card">
-					<div class="card-header">
-					  <img src="img/portada_cnc.png" alt="Cover Image" class="cover-image">
-					</div>
-					<div class="card-content">
-					  <h3>CNC Laser</h3>
-					  <p>
-						Disponible para <strong>Android</strong> e <strong>iOS</strong>, diseñada para <strong>optimizar</strong> el trabajo con maquinaria <strong>CNC</strong>. Con esta herramienta, los usuarios pueden <strong>calcular costos</strong>, <strong>estimar tiempos de trabajo</strong>, obtener <strong>vectores</strong> y <strong>diseños personalizados</strong>, y generar <strong>comprobantes</strong>. La app está desarrollada en <strong>lenguajes nativos</strong> para garantizar el mejor rendimiento: <strong>Kotlin</strong> con <strong>Jetpack Compose</strong> para Android y <strong>SwiftUI</strong> para iOS. Además, integra <strong>bases de datos locales</strong> para mayor eficiencia y <strong>Firebase</strong> para sincronización online. CNC Laser ya cuenta con más de <strong>20.000 descargas</strong> en la <strong>Play Store</strong> y <strong>App Store</strong>.
-					</p>
-					  <div class="download-buttons">
-						<a href="https://play.google.com/store/apps/details?id=com.myj.cncrouterlaser&hl=es_AR" target="_blank" class="store-button google-play">
-						  <img src="img/playstore.png" alt="Get on Google Play">
-						</a>
-						<a href="https://apps.apple.com/app/cnc-laser/id6717614133" target="_blank" class="store-button app-store">
-						  <img src="img/app_store.png" alt="Download on the App Store">
-						</a>
-					  </div>
-					</div>
-				</div>
-			</main>
-		</section>
-		<div class="divisor-container">
-			<hr class="divisor">
-		</div>
-		<section class="container section" id="formacion">
-			<h1 class="titulo-seccion">Formación</h1>
-			<div class="-tarjeta">
-				<div>
-					<h1>Programación Java Básico - Intermedio</h1>
-					<p class="text">UTN - CISCO (2017-2020)</p>
-					<p class="text">
-						Formación completa en Java, comenzando con los fundamentos del lenguaje, incluyendo sintaxis, estructuras de control, y conceptos básicos de la programación orientada a objetos. Posteriormente, se abordaron temas intermedios como estructuras de datos, manejo de excepciones, programación modular y conectividad con bases de datos, desarrollando aplicaciones robustas y eficientes.
-					</p>
-				</div>
-			</div>
-			<div class="-tarjeta">
-				<div>
-					<h1>Programación Universitaria</h1>
-					<p class="text">UTN (2022-2025)</p>
-					<p class="text">
-						Formación integral en desarrollo de software, abarcando múltiples lenguajes y tecnologías. Incluyó programación orientada a objetos y creación de aplicaciones de escritorio en C#, desarrollo de aplicaciones web utilizando HTML, CSS y JavaScript. Se profundizó en lógica y estadística aplicada, manejo avanzado de hardware informático y la integración de inteligencia artificial adaptada a la programación. Además, se adquirieron competencias en inglés avanzado, esenciales para la documentación técnica y la comunicación profesional en entornos internacionales.
-					</p>
-				</div>
-			</div>
-		</section>
-	</main>
-	<div class="divisor-container">
-		<hr class="divisor">
-	</div>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">01</span>
+                <h2 class="section-title">Sobre Mí</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-lead">
+                        Soy <strong>Desarrollador Mobile</strong> de Tucumán, Argentina, con más de 
+                        <strong>7 años de experiencia</strong> creando aplicaciones escalables para 
+                        plataformas Android e iOS.
+                    </p>
+                    <p>
+                        Me especializo en <strong>Kotlin Multiplatform</strong> para desarrollo multiplataforma, 
+                        logrando rendimiento nativo mientras reduzco el tiempo de desarrollo hasta en un 35%. 
+                        Mis apps han alcanzado <strong>más de 30,000 usuarios activos</strong> con mejoras 
+                        de rendimiento de hasta 40%.
+                    </p>
+                    <p>
+                        Manejo el ciclo completo de desarrollo: desde requerimientos y diseño UI/UX 
+                        hasta desarrollo, testing, despliegue y mantenimiento. Siempre enfocado en 
+                        arquitectura limpia y experiencia de usuario excepcional.
+                    </p>
+                </div>
+                
+                <div class="about-details">
+                    <div class="detail-card">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <span class="detail-label">Ubicación</span>
+                            <span class="detail-value">Tucumán, Argentina</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fa-solid fa-language"></i>
+                        <div>
+                            <span class="detail-label">Idiomas</span>
+                            <span class="detail-value">Español (Nativo), Inglés (B2-C1)</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <div>
+                            <span class="detail-label">Disponibilidad</span>
+                            <span class="detail-value">Remoto / Reubicación</span>
+                        </div>
+                    </div>
+                    <div class="detail-card detail-card-cv">
+                        <i class="fa-solid fa-file-arrow-down"></i>
+                        <div>
+                            <span class="detail-label">Currículum</span>
+                            <a href="Mauricio_Chaila_CV_ES.pdf" download class="detail-value cv-link">Descargar CV <i class="fa-solid fa-download"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">02</span>
+                <h2 class="section-title">Stack Tecnológico</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        Mobile
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag featured">Kotlin</span>
+                        <span class="skill-tag featured">Swift</span>
+                        <span class="skill-tag featured">Jetpack Compose</span>
+                        <span class="skill-tag featured">SwiftUI</span>
+                        <span class="skill-tag featured">Kotlin Multiplatform</span>
+                        <span class="skill-tag">Coroutines</span>
+                        <span class="skill-tag">Flow</span>
+                        <span class="skill-tag">Combine</span>
+                        <span class="skill-tag">Room</span>
+                        <span class="skill-tag">Retrofit</span>
+                        <span class="skill-tag">Hilt/Dagger</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-cubes"></i>
+                        Arquitectura
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Clean Architecture</span>
+                        <span class="skill-tag">MVVM</span>
+                        <span class="skill-tag">MVI</span>
+                        <span class="skill-tag">Repository Pattern</span>
+                        <span class="skill-tag">Principios SOLID</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-code"></i>
+                        Web y Backend
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fa-solid fa-gear"></i>
+                        Herramientas
+                    </h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Android Studio</span>
+                        <span class="skill-tag">Xcode</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Unit Testing</span>
+                        <span class="skill-tag">Figma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">03</span>
+                <h2 class="section-title">Proyectos Destacados</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Ratio Memes -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="img/portada_xviolet.png" alt="App Ratio Memes">
+                        <div class="project-overlay">
+                            <a href="https://myjchamp.github.io/RatioMemes/" target="_blank" class="overlay-btn">
+                                <i class="fa-solid fa-globe"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Kotlin</span>
+                            <span>Swift</span>
+                            <span>Firebase</span>
+                        </div>
+                        <h3 class="project-title">Ratio Memes</h3>
+                        <p class="project-description">
+                            App de memes multiplataforma para Android e iOS. Explora, busca y comparte memes 
+                            sin preocuparte por el almacenamiento. Desarrollada con Jetpack Compose y SwiftUI, 
+                            potenciada por Firebase Cloud.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.champ.ratiomemes" target="_blank" class="store-link">
+                                <img src="img/playstore.png" alt="Google Play">
+                            </a>
+                            <a href="https://apps.apple.com/app/ratio-memes/id6504302774" target="_blank" class="store-link">
+                                <img src="img/app_store.png" alt="App Store">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Project 2: CNC Laser -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="img/portada_cnc.png" alt="App CNC Laser">
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span>Kotlin</span>
+                            <span>Swift</span>
+                            <span>Room DB</span>
+                        </div>
+                        <h3 class="project-title">CNC Laser</h3>
+                        <p class="project-description">
+                            Herramienta profesional para operadores de maquinaria CNC. Calcula costos, estima 
+                            tiempos de trabajo, accede a vectores y diseños personalizados. <strong>+20,000 descargas</strong> 
+                            en Play Store y App Store.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.myj.cncrouterlaser&hl=es_AR" target="_blank" class="store-link">
+                                <img src="img/playstore.png" alt="Google Play">
+                            </a>
+                            <a href="https://apps.apple.com/app/cnc-router-laser/id6742417562" target="_blank" class="store-link">
+                                <img src="img/app_store.png" alt="App Store">
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-text">
+                    <span class="section-tag">04</span>
+                    <h2 class="contact-title">Construyamos<br>Algo Increíble</h2>
+                    <p class="contact-description">
+                        ¿Buscas un desarrollador mobile que entregue resultados? Hablemos sobre 
+                        tu próximo proyecto.
+                    </p>
+                </div>
+                
+                <div class="contact-links">
+                    <a href="mailto:mauchamps33@gmail.com" class="contact-card">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>mauchamps33@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mauricio-chaila-7818b2246/" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/myjchamp" target="_blank" class="contact-card">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="tel:+543813034380" class="contact-card">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+54 381 303 4380</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="footer-logo">MC</span>
+                <p class="footer-text">Diseñado y Desarrollado por Mauricio Chaila © 2026</p>
+                <div class="footer-links">
+                    <a href="https://github.com/myjchamp" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mauricio-chaila-7818b2246/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:mauchamps33@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
 </body>
 </html>
