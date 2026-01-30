@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const userLanguage = navigator.language || navigator.userLanguage;
+            if (userLanguage.startsWith("es")) {
+                window.location.href = "es/index.html";
+            }
+        });
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mauricio Chaila | Mobile Developer</title>
